@@ -1,0 +1,84 @@
+<!doctype html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Land.io</title>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	</head>
+	<body>
+		<nav>
+			<img class="logo" src="img/logo.png">
+			<ul class="mainNav">
+				<li class="selected">About</li>
+				<li>How it works</li>
+				<li>Support</li>
+				<li>Log in</li>
+			</ul>
+			<a href="#"><img class="search" src="img/search.png"></a>
+			<div class="circle"></div>
+			<a href="#"><div class="avatar"><img src="img/avatar.png"</div></a>
+			<div class="accountDropdown">
+				<div class="popHeaderContain">
+					<img src="img/avatarpop.png"></img>
+					<div class="userTxt">
+						<h1 class="namePop">Alex Boquist</h1>
+						<h2 class="email">alex@aplchianmedia.com</h2>
+					</div>
+				</div>
+				<ul class="popOptions">
+					<a href="#"><li>VIEW POSTS</li></a>
+					<a href="#"><li>MANAGE GROUPS</li></a>
+					<a href="#"><li>SUBSCRIPTIONS & BILLING</li></a>
+					<a href="#"><li class="signout">LOGOUT</li></a>
+				</ul>
+				<div class="editCircle"><span class="circleImage"></span></div>
+
+			</div>
+
+		</nav>
+		<div class="hero">
+
+			<div class="txtContain">
+				<h1 class="headerText">Land.io, blissful innovation.</h1>
+				<h1 class="smallText">Craft your journey, absolutely free, with Land.io UI kit.</h1>
+				<div class="frontButton"><span class="iconSketch">FREE FOR SKETCH</span></div>
+			</div>
+			<div class="socialIcons">
+				<ul class="socialList">
+					<li class="twitter"><span class="iconTwitter">1024</span></li>
+					<li class="fb"><span class="iconFacebook">526</span></li>
+					<li class="linkedin"><span class="iconLinkedin">356</span></li>
+
+				</ul>
+			</div>
+			<div class="rightCircles">
+				<ul class="circlesList">
+					<li id="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+
+				</ul>
+			</div>
+		</div>
+		<script>
+
+			$(".avatar").click(function(){
+				$(".accountDropdown").fadeIn("fast");
+
+			});
+
+			if($(".accountDropdown").is(":visible")) {
+				$(".logo").click(function(){
+					$(".logo").fadeOut("fast");
+				});
+				// $(".accountDropdown").not.click(function(){
+				// 	$(".accountDropdown").fadeOut("fast");
+				
+			}
+
+		</script>
+
+
+	</body>
+</html>
